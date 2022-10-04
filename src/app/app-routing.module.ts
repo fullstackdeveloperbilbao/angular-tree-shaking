@@ -5,9 +5,14 @@ import { EagerComponent } from './eager/eager.component';
 const routes: Routes = [
   { path: 'eager', component: EagerComponent },
   {
-    path: 'lazy',
+    path: 'lazy1',
     loadChildren: () =>
       import('./child/child.module').then((m) => m.ChildModule),
+  },
+  {
+    path: 'lazy2',
+    loadChildren: () =>
+      import('./chil2/chil2.module').then((m) => m.Chil2Module),
   },
   {
     path: '**',
