@@ -5,5 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [CommonModule, FormsModule, ReactiveFormsModule, HttpClientModule],
+  exports: [CommonModule, FormsModule, ReactiveFormsModule, HttpClientModule],
 })
 export class SharedModule {}
