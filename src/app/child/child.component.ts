@@ -7,11 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./child.component.scss'],
 })
 export class ChildComponent implements OnInit {
-  constructor(private http: HttpClient) {}
+  constructor() {}
 
-  ngOnInit(): void {
-    this.http
-      .get('https://swapi.dev/api/people/1')
-      .subscribe((val) => console.log(val));
-  }
+  ngOnInit(): void {}
 }
