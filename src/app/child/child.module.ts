@@ -6,6 +6,6 @@ import { ChildComponent } from './child.component';
 
 @NgModule({
   declarations: [ChildComponent],
-  imports: [CommonModule, ChildRoutingModule],
+  imports: [ChildRoutingModule],
 })
 export class ChildModule {}
