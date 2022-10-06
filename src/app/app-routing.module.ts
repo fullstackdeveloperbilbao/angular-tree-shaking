@@ -15,6 +15,11 @@ const routes: Routes = [
       import('./chil2/chil2.module').then((m) => m.Chil2Module),
   },
   {
+    path: 'lazy3',
+    loadChildren: () =>
+      import('./child3/child3.module').then((m) => m.Child3Module),
+  },
+  {
     path: '**',
     redirectTo: 'eager',
   },
