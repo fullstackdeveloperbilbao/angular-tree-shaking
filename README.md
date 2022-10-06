@@ -62,5 +62,5 @@ https://angular.io/guide/frequent-ngmodules
 
 # Conclusions:
 - Components: It does not affect if a component is filled it will be tree shaking PARTIALLY. In the examples each tree shaken component increments bundle size per 0,1KB
-- Services: Injected services are not tree shaken. We can use providedIn: 'root' to have COMPLETELY tree-shakeable services.
+- Services: Injected services are NOT tree shaken. We can use providedIn: 'root' to have COMPLETELY tree-shakeable services.
 
